@@ -1,6 +1,6 @@
-Just made a real estate web application with React that allows users to explore residential properties, browse property listings, filter properties based on location, BHK configuration, and price, and connect with the real estate team through a contact form. The project focuses on creating an immersive property-browsing experience through scroll-controlled background animations, interactive property cards, animated hero sections, property search and filtering, brand showcases, and a modern navigation interface.
+Here's a Real Estate web application with React that allows users to explore residential properties, browse property listings, filter properties based on location, BHK configuration, and price, and connect with the real estate team through a contact form. The project focuses on creating an immersive property-browsing experience through scroll-controlled background animations, interactive property cards, animated hero sections, property search and filtering, brand showcases, and a modern navigation interface.
 
-⭐Project Link:
+⭐Project Link: https://dragorod.github.io/Real-Estate-Demo/
 
 ## 🛠️ Tools & Technologies Used
 - React
@@ -27,7 +27,7 @@ Just made a real estate web application with React that allows users to explore 
 - Brand showcase with animation
 
 ## 🚀 Future Improvements
-- Add user authentication (Login / Signup)
+- Add user authentication
 - Add user profiles
 - Add property details pages
 - Add advanced property filters
