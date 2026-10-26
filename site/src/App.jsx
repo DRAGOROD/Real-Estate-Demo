@@ -2,8 +2,9 @@ import Hero from "./hero.jsx"
 import Contact from './contact.jsx'
 import Footer from "./footer.jsx"
 import Navbar from './navbar'
+import LoadingPage from "./loading.jsx"
 
-import { useRef,createContext } from "react"
+import { useRef,createContext, useEffect,useState } from "react"
 
 export let navContext=createContext(null)
 
@@ -14,6 +15,14 @@ function App() {
 let homeRef=useRef(null)   
 let contactRef=useRef(null)  
 let adviceToolsRef=useRef(null)  
+
+let [isLoading,setIsLoading]=useState(true)
+
+
+useEffect(()=>{
+let interval=setTimeout(()=>{setIsLoading(false)},7000)
+return ()=>clearInterval(interval)
+},[])
 
   return (
     <>
@@ -31,7 +40,8 @@ let adviceToolsRef=useRef(null)
          </div>
         </navContext.Provider>
       </ReactLenis>
-    </>
+      {isLoading && (<LoadingPage/>)}
+      </>
   )
 }
 
